@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <h1>Provide与Inject{{car}}</h1>
+    <h1>Provide与Inject{{ car }}</h1>
     <hr />
     <Child></Child>
   </div>

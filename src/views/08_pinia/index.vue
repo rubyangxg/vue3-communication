@@ -1,22 +1,19 @@
 <template>
   <div class="box">
-    <h1>pinia</h1>
     <div class="container">
-      <Child></Child>
-      <Child1></Child1>
+      <Child1 />
+      <Child2></Child2>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Child from "./Child.vue";
+// vuex:集中式状态管理器，可以实现任意组件间值的传递
+// 核心概念：state/ mutations/actions/getters/modules
+//pinia:也是集中式状态管理容器，可以实现任意组件间的通信
+// 核心概念：state/actios/getters
 import Child1 from "./Child1.vue";
-//vuex:集中式管理状态容器,可以实现任意组件之间通信！！！
-//核心概念:state、mutations、actions、getters、modules
-
-//pinia:集中式管理状态容器,可以实现任意组件之间通信！！！
-//核心概念:state、actions、getters
-//pinia写法:选择器API、组合式API
+import Child2 from "./Child.vue";
 </script>
 
 <style scoped>
@@ -25,7 +22,7 @@ import Child1 from "./Child1.vue";
   height: 400px;
   background: skyblue;
 }
-.container{
+.container {
   display: flex;
 }
 </style>
